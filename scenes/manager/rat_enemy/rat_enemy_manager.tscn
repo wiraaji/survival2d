@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://c28txg08sglnu"]
+
+[ext_resource type="Script" path="res://scenes/manager/rat_enemy/rat_enemy_manager.gd" id="1_oukfd"]
+[ext_resource type="PackedScene" uid="uid://bjfvco04fmt0g" path="res://scenes/enemy/rat_enemy/rat_enemy.tscn" id="2_mjio8"]
+
+[node name="RatEnemyManager" type="Node"]
+script = ExtResource("1_oukfd")
+basic_enemy_scene = ExtResource("2_mjio8")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.3
+autostart = true

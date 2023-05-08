@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://ys2fkaly00tj"]
+
+[ext_resource type="Script" path="res://scenes/manager/ghost_enemy/ghost_enemy_manager.gd" id="1_kf3jv"]
+[ext_resource type="PackedScene" uid="uid://hj4rtf6e6fie" path="res://scenes/enemy/ghost_enemy/ghost_enemy.tscn" id="2_p6gak"]
+
+[node name="GhostEnemyManager" type="Node"]
+script = ExtResource("1_kf3jv")
+ghost_enemy_scene = ExtResource("2_p6gak")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.183
+autostart = true
